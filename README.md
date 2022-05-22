@@ -2,6 +2,16 @@
 
 > Repositório voltado para exemplificar as principais anotações da Java Persistence API
 
+## Index
+
+- [1. Como este repositório funciona](https://github.com/danielferraz-git/anotacoes-jpa/#1-como-este-reposit%C3%B3rio-funciona)
+- [2. Configuração básica do projeto](https://github.com/danielferraz-git/anotacoes-jpa/#2-configura%C3%A7%C3%A3o-b%C3%A1sica-do-projeto)
+- [3. Começando a entender as anotações](https://github.com/danielferraz-git/anotacoes-jpa/edit/master/README.md#3-come%C3%A7ando-a-entender-as-anota%C3%A7%C3%B5es)
+- [3.1 @Entity e @Id](https://github.com/danielferraz-git/anotacoes-jpa/#--entity-e-id)
+- [3.2 @Table, @Column e @GeneratedValue](https://github.com/danielferraz-git/anotacoes-jpa/#--table-column-e-generatedvalue)
+---
+
+
 Java Persistence API é uma especificação oficial que descreve como deve ser o comportamento dos frameworks de persistência Java que desejarem implementá-la. Por ser uma especificação ela não possui código que possa ser executado. Para isso é necessário uma implementação da especificação.
 
 > Esse repositório utiliza a implementação do Hibernate.
@@ -61,7 +71,7 @@ spring.jpa.properties.hibernate.show_sql=true
 spring.jpa.properties.hibernate.format_sql=true
 ```
 
-### 3. Com essas dependências instaladas e o application[profile].properties configurado, podemos começar a entender as anotações:
+### 3. Começando a entender as anotações:
 
 #### - [@Entity](https://docs.oracle.com/javaee/7/api/javax/persistence/Entity.html) e [@Id](https://docs.oracle.com/javaee/7/api/javax/persistence/Id.html)
 
@@ -85,7 +95,7 @@ public class Pessoa {
 ```
 #### - [@Table](https://docs.oracle.com/javaee/7/api/javax/persistence/Table.html) [@Column](https://docs.oracle.com/javaee/7/api/javax/persistence/Column.html) e [@GeneratedValue](https://docs.oracle.com/javaee/7/api/javax/persistence/GeneratedValue.html)
 
-> A anotação [@GeneratedValue](https://docs.oracle.com/javaee/7/api/javax/persistence/GeneratedValue.html) serve para indicar que um campo será gerado automáticamente pelo banco de dados.
+> A anotação [@GeneratedValue](https://docs.oracle.com/javaee/7/api/javax/persistence/GeneratedValue.html) serve para indicar que um campo será gerado automaticamente pelo banco de dados.
 > Essa anotação tem dois parametros:
 >> strategy  - Do tipo [GenerationType](https://docs.oracle.com/javaee/7/api/javax/persistence/GenerationType.html) onde você pode definir como o banco vai gerar o valor. No MySql por exemplo, o padrão é [GenerationType.IDENTITY](https://docs.oracle.com/javaee/7/api/javax/persistence/GenerationType.html#IDENTITY), isso corresponde ao autoincrement, já para o Postgres o correto é utilizar [GenerationType.SEQUENCE](https://docs.oracle.com/javaee/7/api/javax/persistence/GenerationType.html#SEQUENCE).  
 >> generator - Do tipo String, serve para informar o nome do [@TableGenerator](https://docs.oracle.com/javaee/7/api/javax/persistence/TableGenerator.html) quando for usado. (Irei falar dessa anotação em breve)  
