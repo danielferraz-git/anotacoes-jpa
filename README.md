@@ -4,13 +4,13 @@
 
 ## Index
 
-- [1. Como este repositório funciona](https://github.com/danielferraz-git/anotacoes-jpa/#1-como-este-reposit%C3%B3rio-funciona)
-- [2. Configuração básica do projeto](https://github.com/danielferraz-git/anotacoes-jpa/#2-configura%C3%A7%C3%A3o-b%C3%A1sica-do-projeto)
-- [3. Anotações básicas](https://github.com/danielferraz-git/anotacoes-jpa#3-anota%C3%A7%C3%B5es-b%C3%A1sicas)
-- [3.1 @Entity e @Id](https://github.com/danielferraz-git/anotacoes-jpa/#--entity-e-id)
-- [3.2 @Table, @Column e @GeneratedValue](https://github.com/danielferraz-git/anotacoes-jpa/#--table-column-e-generatedvalue)  
-- [4. Anotações que definem relacionamentos entre entidades](https://github.com/danielferraz-git/anotacoes-jpa#4-anota%C3%A7%C3%B5es-que-definem-relacionamentos-entre-entidades)
-- [4.1 @OneToOne e @MapsId](https://github.com/danielferraz-git/anotacoes-jpa#--onetoone-e-mapsid)
+- [1. Como este repositório funciona](#1-como-este-reposit%C3%B3rio-funciona)
+- [2. Configuração básica do projeto](#2-configura%C3%A7%C3%A3o-b%C3%A1sica-do-projeto)
+- [3. Anotações básicas](#3-anota%C3%A7%C3%B5es-b%C3%A1sicas)
+- [3.1 @Entity e @Id](#--entity-e-id)
+- [3.2 @Table, @Column e @GeneratedValue](#--table-column-e-generatedvalue)  
+- [4. Anotações que definem relacionamentos entre entidades](#4-anota%C3%A7%C3%B5es-que-definem-relacionamentos-entre-entidades)
+- [4.1 @OneToOne e @MapsId](#--onetoone-e-mapsid)
 ---
 
 
